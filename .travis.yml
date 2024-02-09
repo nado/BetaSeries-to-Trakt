@@ -1,8 +1,0 @@
-language: csharp
-solution: "BetaSeries.Net.sln"
-dotnet: 2.0.0
-before_script:
-- travis_retry msbuild /t:Restore BetaSeries.Net.sln
-script:
-- msbuild /p:Configuration=Release BetaSeries.Net.sln
-- msbuild /p:Configuration=Debug BetaSeries.Net.sln
